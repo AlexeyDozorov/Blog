@@ -19,4 +19,28 @@ public class MainController {
         return "about";
     }
 
+
+
+    @GetMapping("/tea")
+    public String tea(Model model) {
+        model.addAttribute("title", "Все виды чая");
+        return "tea";
+    }
+
+    @GetMapping("/first")
+    public String first(Model model) {
+        model.addAttribute("title", "Это первая коробка");
+        return "tea";
+    }
+    @GetMapping("/second")
+    public String second(Model model) {
+        model.addAttribute("title", "Это вторая коробка");
+        return "tea";
+    }
+    @GetMapping("/third")
+    public String third(Model model) {
+        model.addAttribute("title", "Это третья коробка");
+        return "tea";
+    }
+
 }

@@ -41,17 +41,13 @@ public class BlockController {
 
     @GetMapping("/blog/{id}")
     public String blogShowDetails(@PathVariable(value = "id") int id, Model model) {
-        if (postRepository.existsById(id)) {
-            Optional<Post> post = postRepository.findById(id);
-            ArrayList<Post> res = new ArrayList<>();
-            post.ifPresent(res::add);
-            int count = res.get(0).getViews();
-            res.get(0).setViews(++count);
-            System.out.println(res.get(0).getViews());
-            model.addAttribute("detail", res);
-        } else {
+        if (!postRepository.existsById(id)) {
             return "redirect:/";
         }
+        Optional<Post> post = postRepository.findById(id);
+        ArrayList<Post> res = new ArrayList<>();
+        post.ifPresent(res::add);
+        model.addAttribute("detail", res);
         return "blog-details";
     }
     @GetMapping("/blog/{id}/edit")

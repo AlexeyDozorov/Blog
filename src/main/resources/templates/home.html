@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title> Cиськи</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>любовь и чай</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -12,30 +12,36 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Album example</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <h1 class="fw-light">любовь и чай</h1>
+                <p class="lead text-muted">Здесь вы можете собрать свой любимый крафтовый чай</p>
                 <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    <a href="/order" class="btn btn-success my-3">Заказать чай</a>
+                    <a href="/tea" class="btn btn-light my-2">Посмотреть все виды чая</a>
                 </p>
             </div>
         </div>
     </section>
-
+    <Img src="https://i.postimg.cc/rs6rLWzf/G7-SJBr-ASg-Fc.jpg" Width="200" Height="200" style="margin-left:20px">
+    <Img src="https://i.postimg.cc/zvSVZcsf/gwr6vh45-Cs-Y.jpg" Width="200" Height="200">
+    <Img src="https://i.postimg.cc/3xj9f8fM/JXc-LI5-HB5-U.jpg" Width="200" Height="200">
+    <Img src="https://i.postimg.cc/vms8Mzvg/mixw-Yio-LAU.jpg" Width="200" Height="200">
+    <Img src="https://i.postimg.cc/YSCrhSJM/Ox7-Qr-LC-FV0.jpg" Width="200" Height="200">
+    <Img src="https://i.postimg.cc/G3HKnwhf/q9-SOh2-RLQmk.jpg" Width="207" Height="207">
+    <Img src="https://i.postimg.cc/kX2psRbB/Sa4mt9-W9-Zi-I.jpg" Width="200" Height="200">
     <div class="album py-5 bg-light">
         <div class="container">
-
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+                        <Img src="https://i.postimg.cc/xdC8kw5z/p91-Ec4v-W-q-U.jpg" Width="420" Height="420">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Это наш первый набор</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    <form action="/first" method="get">
+                                        <button type="submit" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                                    </form>
+
                                 </div>
                                 <small class="text-muted">9 mins</small>
                             </div>
@@ -44,14 +50,14 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+                        <Img src="https://i.postimg.cc/h4wjXZQJ/Enn1-Yhl-RZss.jpg" Width="420" Height="420">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Это наш второй набор</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    <form action="/second" method="get">
+                                        <button type="submit" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                                    </form>
                                 </div>
                                 <small class="text-muted">9 mins</small>
                             </div>
@@ -60,112 +66,14 @@
                 </div>
                 <div class="col">
                     <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
+                        <Img src="https://i.postimg.cc/vT1ZPfkH/En-GKQlg-R2-H4.jpg" Width="420" Height="420">
                         <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Это наш третий набор</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    <form action="/third" method="get">
+                                        <button type="submit" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                                    </form>
                                 </div>
                                 <small class="text-muted">9 mins</small>
                             </div>
@@ -177,6 +85,151 @@
     </div>
 
 </main>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+</svg>
+
+<div class="container py-3">
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Первый</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$12</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Кружечка на выбор &#9749;</li>
+                            <li>Классная открытка &#128525;</li>
+                            <li>Крафтовый набор чая &#127873;</li>
+
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Второй</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$14</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Кружечка на выбор &#9749;</li>
+                            <li>Классная открытка &#128525;</li>
+                            <li>Крафтовый набор чая &#127873;</li>
+                            <li>Набор магнитиков &#128254;</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Заказать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Третий</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$9</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Кружечка на выбор &#9749;</li>
+                            <li>Классная открытка &#128525;</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Давай сравним наборы</h2>
+
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">Первый</th>
+                    <th style="width: 22%;">Второй</th>
+                    <th style="width: 22%;">Третий</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Кружечка на выбор</th>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Классная открытка</th>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Крафтовый набор чая</th>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Набор магнитиков</th>
+                    <td></td>
+                    <td>
+                        <svg class="bi" width="24" height="24">
+                            <use xlink:href="#check"></use>
+                        </svg>
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</div>
+</body>
 <div th:insert="blocks/footer :: footer"></div>
 </body>
 </html>
